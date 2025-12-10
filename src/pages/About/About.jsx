@@ -13,7 +13,7 @@ function AboutHero() {
       <div className={styles.heroOverlay}></div>
       <div className={styles.heroBackground}>
         <img
-          src="/images/portfolio/ensaio-fotografico/12.jpg"
+          src="/images/portfolio/ensaio-fotografico/12.webp"
           alt="Studio Valle"
         />
       </div>
@@ -66,7 +66,7 @@ function StorySection() {
 
           <FadeIn direction="right" className={styles.storyImage}>
             <img
-              src="/images/portfolio/ensaio-fotografico/10.jpg"
+              src="/images/portfolio/ensaio-fotografico/10.webp"
               alt="Vale do Paraíba"
             />
           </FadeIn>
@@ -84,7 +84,7 @@ function MissionSection() {
         <div className={styles.missionGrid}>
           <FadeIn direction="left" className={styles.missionImage}>
             <img
-              src="/images/portfolio/ensaio-fotografico/07.jpg"
+              src="/images/portfolio/ensaio-fotografico/07.webp"
               alt="Nossa missão"
             />
           </FadeIn>
@@ -194,7 +194,7 @@ function LocationSection() {
 
           <FadeIn delay={0.2} className={styles.locationImage}>
             <img
-              src="/images/portfolio/corrida/Corrida Mogi -3295.jpg"
+              src="/images/portfolio/corrida/Corrida Mogi -3295.webp"
               alt="Vale do Paraíba"
             />
           </FadeIn>

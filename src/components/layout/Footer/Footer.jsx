@@ -30,7 +30,7 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/images/logo.jpg" alt="Studio Valle" className={styles.logo} />
+            <img src="/images/logo.webp" alt="Studio Valle" className={styles.logo} />
             <p className={styles.tagline}>
               No Vale do Paraíba, onde as montanhas guardam segredos e a beleza nunca dorme.
             </p>

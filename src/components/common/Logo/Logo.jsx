@@ -12,7 +12,7 @@ export function Logo({ variant = 'default', size = 'md' }) {
   return (
     <Link to="/" className={classNames}>
       <motion.img
-        src="/images/logo.jpg"
+        src="/images/logo.webp"
         alt="Studio Valle"
         className={styles.logoImage}
         whileHover={{ scale: 1.05 }}

@@ -21,7 +21,7 @@ function HeroSection() {
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         >
           <img
-            src="/images/portfolio/ensaio-fotografico/09.jpg"
+            src="/images/portfolio/ensaio-fotografico/09.webp"
             alt="Studio Valle"
             className={styles.heroImage}
           />
@@ -106,7 +106,7 @@ function AboutPreview() {
           <FadeIn direction="left" className={styles.aboutImage}>
             <div className={styles.imageFrame}>
               <img
-                src="/images/portfolio/ensaio-fotografico/03.jpg"
+                src="/images/portfolio/ensaio-fotografico/03.webp"
                 alt="Studio Valle"
               />
             </div>
@@ -190,7 +190,7 @@ function CTASection() {
     <section className={styles.ctaSection}>
       <div className={styles.ctaBackground}>
         <img
-          src="/images/portfolio/banda-musica/Banda.jpg"
+          src="/images/portfolio/banda-musica/Banda.webp"
           alt="CTA Background"
         />
       </div>

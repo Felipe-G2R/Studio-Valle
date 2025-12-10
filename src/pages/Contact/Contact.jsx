@@ -20,7 +20,7 @@ function ContactHero() {
       <div className={styles.heroOverlay}></div>
       <div className={styles.heroBackground}>
         <img
-          src="/images/portfolio/ensaio-fotografico/14.jpg"
+          src="/images/portfolio/ensaio-fotografico/14.webp"
           alt="Contato"
         />
       </div>

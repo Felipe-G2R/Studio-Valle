@@ -21,7 +21,7 @@ const services = [
       'Direção de arte personalizada',
       'Tratamento profissional de imagens'
     ],
-    image: '/images/portfolio/ensaio-fotografico/03.jpg',
+    image: '/images/portfolio/ensaio-fotografico/03.webp',
     link: '/portfolio?categoria=ensaio-fotografico'
   },
   {
@@ -37,7 +37,7 @@ const services = [
       'Entrega rápida pós-evento',
       'Pacotes para organizadores'
     ],
-    image: '/images/portfolio/corrida/Corrida Mogi -3295.jpg',
+    image: '/images/portfolio/corrida/Corrida Mogi -3295.webp',
     link: '/portfolio?categoria=corrida'
   },
   {
@@ -53,7 +53,7 @@ const services = [
       'Ensaios com bandas',
       'Capas de álbuns e singles'
     ],
-    image: '/images/portfolio/banda-musica/Banda-303.jpg',
+    image: '/images/portfolio/banda-musica/Banda-303.webp',
     link: '/portfolio?categoria=banda-musica'
   }
 ]
@@ -88,7 +88,7 @@ function ServicesHero() {
       <div className={styles.heroOverlay}></div>
       <div className={styles.heroBackground}>
         <img
-          src="/images/portfolio/ensaio-fotografico/11.jpg"
+          src="/images/portfolio/ensaio-fotografico/11.webp"
           alt="Serviços"
         />
       </div>
@@ -182,7 +182,7 @@ function CTASection() {
   return (
     <section className={styles.ctaSection}>
       <div className={styles.ctaBackground}>
-        <img src="/images/portfolio/ensaio-fotografico/09.jpg" alt="CTA" />
+        <img src="/images/portfolio/ensaio-fotografico/09.webp" alt="CTA" />
       </div>
       <div className={styles.ctaOverlay}></div>
       <div className={`container ${styles.ctaContent}`}>

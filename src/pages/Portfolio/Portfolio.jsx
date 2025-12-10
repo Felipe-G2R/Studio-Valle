@@ -67,7 +67,7 @@ function PortfolioHero() {
       <div className={styles.heroOverlay}></div>
       <div className={styles.heroBackground}>
         <img
-          src="/images/portfolio/banda-musica/Banda-303.jpg"
+          src="/images/portfolio/banda-musica/Banda-303.webp"
           alt="Portfolio"
         />
       </div>
