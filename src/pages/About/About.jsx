@@ -68,6 +68,7 @@ function StorySection() {
             <img
               src="/images/portfolio/ensaio-fotografico/10.webp"
               alt="Vale do Paraíba"
+              loading="lazy"
             />
           </FadeIn>
         </div>
@@ -86,6 +87,7 @@ function MissionSection() {
             <img
               src="/images/portfolio/ensaio-fotografico/07.webp"
               alt="Nossa missão"
+              loading="lazy"
             />
           </FadeIn>
 
@@ -196,6 +198,7 @@ function LocationSection() {
             <img
               src="/images/portfolio/corrida/Corrida Mogi -3295.webp"
               alt="Vale do Paraíba"
+              loading="lazy"
             />
           </FadeIn>
         </div>

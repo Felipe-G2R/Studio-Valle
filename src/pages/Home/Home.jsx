@@ -108,6 +108,7 @@ function AboutPreview() {
               <img
                 src="/images/portfolio/ensaio-fotografico/03.webp"
                 alt="Studio Valle"
+                loading="lazy"
               />
             </div>
           </FadeIn>
@@ -192,6 +193,7 @@ function CTASection() {
         <img
           src="/images/portfolio/banda-musica/Banda.webp"
           alt="CTA Background"
+          loading="lazy"
         />
       </div>
       <div className={styles.ctaOverlay}></div>

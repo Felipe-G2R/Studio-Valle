@@ -182,7 +182,7 @@ function CTASection() {
   return (
     <section className={styles.ctaSection}>
       <div className={styles.ctaBackground}>
-        <img src="/images/portfolio/ensaio-fotografico/09.webp" alt="CTA" />
+        <img src="/images/portfolio/ensaio-fotografico/09.webp" alt="CTA" loading="lazy" />
       </div>
       <div className={styles.ctaOverlay}></div>
       <div className={`container ${styles.ctaContent}`}>
