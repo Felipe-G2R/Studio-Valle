@@ -1,0 +1,23 @@
+# Studio Valle - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://studiovalle.com.br/sitemap.xml
+
+# Disallow admin/private paths if any
+Disallow: /api/
+Disallow: /_*
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay for all bots
+Crawl-delay: 1

@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+/* Sizes */
+.sm .logoImage {
+  height: 40px;
+}
+
+.md .logoImage {
+  height: 60px;
+}
+
+.lg .logoImage {
+  height: 80px;
+}
+
+/* Variants */
+.default .logoImage {
+  /* Default styling */
+}
+
+.light .logoImage {
+  filter: brightness(1.1);
+}
+
+.dark .logoImage {
+  filter: brightness(0.9);
+}

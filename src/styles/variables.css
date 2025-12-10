@@ -1,0 +1,141 @@
+/* ========================================
+   STUDIO VALLE - Design Tokens
+   ======================================== */
+
+:root {
+  /* === CORES === */
+  /* Backgrounds */
+  --color-bg-primary: #D4C4B0;
+  --color-bg-secondary: #FAF8F5;
+  --color-bg-accent: #E8DED0;
+  --color-bg-dark: #1A1409;
+  --color-bg-dark-soft: #2C2416;
+
+  /* Texto */
+  --color-text-primary: #2C2416;
+  --color-text-secondary: #9B9285;
+  --color-text-inverse: #FAF8F5;
+  --color-text-muted: #6B6156;
+
+  /* Acentos */
+  --color-accent-primary: #8B7355;
+  --color-accent-secondary: #B8A88A;
+  --color-accent-hover: #D4C9B5;
+  --color-accent-dark: #6B5A45;
+
+  /* Utilitários */
+  --color-border: #C9B89A;
+  --color-border-light: #E8DED0;
+  --color-shadow: rgba(44, 36, 22, 0.1);
+  --color-overlay: rgba(26, 20, 9, 0.7);
+
+  /* === TIPOGRAFIA === */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Garamond, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ui: 'Montserrat', Arial, sans-serif;
+
+  /* Tamanhos */
+  --text-hero: clamp(2.5rem, 8vw, 5rem);
+  --text-h1: clamp(2rem, 5vw, 3.5rem);
+  --text-h2: clamp(1.75rem, 4vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 3vw, 1.75rem);
+  --text-h4: clamp(1.1rem, 2vw, 1.35rem);
+  --text-large: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+
+  /* Line Heights */
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+  --tracking-widest: 0.2em;
+
+  /* === ESPAÇAMENTO === */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* === BORDAS === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* === SOMBRAS === */
+  --shadow-sm: 0 1px 2px rgba(44, 36, 22, 0.05);
+  --shadow-md: 0 4px 6px rgba(44, 36, 22, 0.07);
+  --shadow-lg: 0 10px 25px rgba(44, 36, 22, 0.1);
+  --shadow-xl: 0 20px 40px rgba(44, 36, 22, 0.15);
+  --shadow-inner: inset 0 2px 4px rgba(44, 36, 22, 0.06);
+
+  /* === TRANSIÇÕES === */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slower: 800ms ease;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* === LAYOUT === */
+  --container-max: 1280px;
+  --container-padding: var(--space-lg);
+  --header-height: 80px;
+
+  /* === Z-INDEX === */
+  --z-behind: -1;
+  --z-base: 0;
+  --z-above: 10;
+  --z-header: 100;
+  --z-modal: 200;
+  --z-tooltip: 300;
+}
+
+/* Responsive adjustments - Mobile First */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: var(--space-md);
+    --header-height: 60px;
+    --text-large: 1rem;
+    --space-4xl: 4rem;
+    --space-5xl: 5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  :root {
+    --container-padding: var(--space-lg);
+    --header-height: 70px;
+    --space-4xl: 5rem;
+    --space-5xl: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: var(--space-xl);
+    --header-height: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: var(--space-2xl);
+  }
+}

@@ -1,0 +1,143 @@
+/* ========================================
+   STUDIO VALLE - Typography
+   ======================================== */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* === HEADINGS === */
+.text-hero {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 500;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+}
+
+h3, .h3 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  color: var(--color-text-primary);
+}
+
+h4, .h4 {
+  font-family: var(--font-serif);
+  font-size: var(--text-h4);
+  font-weight: 500;
+  line-height: var(--leading-snug);
+  color: var(--color-text-primary);
+}
+
+/* === BODY TEXT === */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.text-large {
+  font-size: var(--text-large);
+  line-height: var(--leading-relaxed);
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+}
+
+.text-small {
+  font-size: var(--text-small);
+  line-height: var(--leading-normal);
+}
+
+.text-caption {
+  font-size: var(--text-caption);
+  line-height: var(--leading-normal);
+  color: var(--color-text-secondary);
+}
+
+/* === SPECIAL TEXT === */
+.text-subtitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-h3);
+  font-weight: 400;
+  font-style: italic;
+  line-height: var(--leading-snug);
+  color: var(--color-text-secondary);
+}
+
+.text-quote {
+  font-family: var(--font-serif);
+  font-size: var(--text-large);
+  font-style: italic;
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-primary);
+}
+
+.text-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent-primary);
+}
+
+.text-inverse {
+  color: var(--color-text-inverse);
+}
+
+/* === LINKS === */
+.link {
+  color: var(--color-accent-primary);
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--color-accent-dark);
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width var(--transition-normal) var(--ease-out-expo);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
