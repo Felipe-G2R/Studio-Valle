@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import styles from './Button.module.css'
+
+const MotionLink = motion(Link)
 
 export function Button({
   children,
@@ -18,21 +21,37 @@ export function Button({
     className
   ].filter(Boolean).join(' ')
 
-  const MotionComponent = href ? motion.a : motion.button
+  const isInternal = href && href.startsWith('/')
+  const isExternal = href && (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel'))
+
+  const motionProps = {
+    className: classNames,
+    whileHover: { scale: 1.02, y: -2 },
+    whileTap: { scale: 0.98 },
+    transition: { duration: 0.2, ease: [0.16, 1, 0.3, 1] },
+    ...props
+  }
+
+  if (isInternal) {
+    return (
+      <MotionLink to={href} {...motionProps}>
+        {children}
+      </MotionLink>
+    )
+  }
+
+  if (isExternal) {
+    return (
+      <motion.a href={href} target="_blank" rel="noopener noreferrer" {...motionProps}>
+        {children}
+      </motion.a>
+    )
+  }
 
   return (
-    <MotionComponent
-      className={classNames}
-      href={href}
-      onClick={onClick}
-      disabled={disabled}
-      whileHover={{ scale: 1.02, y: -2 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-      {...props}
-    >
+    <motion.button onClick={onClick} disabled={disabled} {...motionProps}>
       {children}
-    </MotionComponent>
+    </motion.button>
   )
 }
 
